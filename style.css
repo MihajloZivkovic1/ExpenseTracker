@@ -1,0 +1,264 @@
+:root {
+    --darkSlateGray: #24273d;
+    /* sidebar */
+    --torquoise: #3dc3d6;
+    /* nav bar */
+    --tomato: #fe5460;
+    /* expense */
+    --seaGreen: #41dd66;
+    /* income */
+    --silver: #c8c7cc;
+    /* arrow */
+    --gainsboro: #e1e0e4;
+    /* date */
+    --background: #f8f8fa;
+    /* background */
+    --white: #ffffff;
+    /* tablerow */
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: var(--gainsboro);
+    color: var(--primary-color);
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    margin: 24px;
+    padding: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+}
+
+.header-headings {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.header-profile {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.info {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-add-new,
+.info-summary {
+    display: flex;
+    height: 20rem;
+    width: 30rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.detail {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail-category,
+.detail-recents {
+    display: flex;
+    /* height: 20rem;
+  width: 30rem; */
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.add-btn,
+.formGroup input[type='submit'] {
+    background-color: var(--torquoise);
+    border: none;
+    height: 35px;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.add-btn:hover,
+.formGroup input[type='submit']:hover {
+    background-color: darkcyan;
+}
+
+.del-btn {
+    background-color: var(--tomato);
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.del-btn:hover {
+    background-color: red;
+
+}
+
+.active-tab {
+    background-color: var(--tomato);
+}
+
+.active-tab:hover {
+    background-color: brown;
+}
+
+#incomeAddForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.formGroup {
+    padding: 10px 0 10px 0;
+}
+
+input[type='text'],
+input[type='number'],
+select {
+    min-height: 20px;
+    padding: 5px;
+    border: 1px solid var(--torquoise);
+    border-radius: 6px;
+    outline: none;
+}
+
+.totalincome-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.totalincome-value table {
+    max-width: 80%;
+    text-align: center;
+}
+
+.incomeBudgetCompare table {
+    width: 80%;
+    text-align: center;
+}
+
+.budget-table table tr td:nth-child(2) {
+    text-transform: capitalize;
+}
+
+.budget-table td {
+    text-align: center;
+}
+
+#incomeChart {
+    height: 480px !important;
+    width: 480px !important;
+    background-color: var(--white);
+    margin-bottom: 3rem !important;
+}
+
+#incBudCompareChart {
+    height: 380px !important;
+    width: 30rem !important;
+    background-color: var(--white);
+}
+
+
+/* EXpenses */
+.expense-form-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.all-expenses-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.detail-expense-category,
+.detail-expense-recents,
+.detail-summary-category,
+.detail-summary-recents {
+    display: flex;
+    height: 20rem;
+    width: 30rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.exhaustionDiv,
+.innerexhaustionDiv {
+    height: 1.2rem;
+    border-radius: 8px;
+    width: 20rem;
+}
+
+.exhaustionDiv {
+    border: 1px solid black;
+}
+
+.innerexhaustionDiv {
+    background-color: var(--torquoise);
+}
+
+.all-expenses {
+    overflow-y: scroll;
+}
+
+.all-expenses table {
+    width: 95%;
+    text-align: center;
+}
+
+.detail-expense-recents,
+.detail-summary-category,
+.detail-summary-recents {
+    height: 35rem;
+}
+
+/* summary */
+
+.summary-info-add {
+    width: 100%;
+    text-align: center;
+}
+
+.summary-budget-table table {
+    width: 95%;
+}
+
+.summary-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-saving {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.summary-saving span {
+    font-weight: 700;
+}
